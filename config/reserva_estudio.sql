@@ -47,19 +47,7 @@ CREATE TABLE `clientes` (
 -- Volcado de datos para la tabla `clientes`
 --
 
-INSERT INTO `clientes` (`id_cliente`, `uuid`, `nombre`, `apellido`, `dni`, `dni_frente`, `dni_dorso`, `gmail`, `celular`, `domicilio`, `residencia`, `nacionalidad`, `created_at`) VALUES
-(1, '8a5711ef-189f-11f1-b6ec-9cb1a525c980', 'Juan', 'Perez', '40123456', '', '', 'juanperez@gmail.com', '3764000000', 'Calle Falsa 123', 'Villa Dolores', 'Argentina', '2026-03-05 14:28:12'),
-(2, '', 'Rafael', 'Sanchez', '45898656', '', '', 'sr.rafa0219@gmail.com', '3765223344', '', '', '', '2026-03-05 23:39:31'),
-(3, '', 'Marto', 'Sanchez', '44555666', '', '', 'adminprincipal@admin.com', '3764123456', '', '', '', '2026-03-06 14:57:56'),
-(4, '', 'Juan', 'Perro', '77888999', '', '', 'admin@ejemplo.com', '3764123456', '', '', '', '2026-03-06 15:25:08'),
-(5, '', 'MAURITO', 'Perro', '77777888', '', '', 'admin@ejemplo.com', '3765223344', '', '', '', '2026-04-13 12:41:06'),
-(6, '', 'JUaN', 'Gato', '12334455', '', '', 'admin@ejemplo.com', '3765223344', '', '', '', '2026-04-13 12:47:07'),
-(7, '', 'Marcos', 'Perez', '55889944', '', '', 'gmail@ejemplo.com', '3764123456', 'calle falsa 789', 'Misiones', 'Argentina', '2026-04-13 13:23:11'),
-(9, '', 'MauriSio', 'GatoRezAAAAA', '44222333', '/uploads/dni/dni_44222333_frente.jpg', '/uploads/dni/dni_44222333_dorso.jpg', 'gmail@ejemplo.com', '3765889911', 'calle falsa 123', 'Misiones', 'Argentina', '2026-04-16 14:49:08'),
-(11, '', 'Marcos', 'Pergolini', '44222334', '/uploads/dni/dni_44222334_frente.png', '/uploads/dni/dni_44222334_dorso.png', 'maurybionico18@gmail.com', '3765889911', 'calle falsa 789', 'Misiones', 'Paraguay', '2026-04-16 15:00:46'),
-(12, '', 'Markito', 'PerranDeZ', '55888999', '/uploads/dni/dni_55888999_frente.jpg', '/uploads/dni/dni_55888999_dorso.jpg', 'gmail@ejemplo.com', '3765889911', 'calle falsa 456', 'Argentina', 'Argentina', '2026-04-22 14:10:35'),
-(13, '', 'Marcos', 'Sanchez', '55888998', '/uploads/dni/dni_55888998_frente.jpg', '/uploads/dni/dni_55888998_dorso.jpg', 'gmail@ejemplo.com', '3765889911', 'calle falsa 789', 'Misiones', 'Paraguay', '2026-04-22 14:18:20'),
-(14, '', 'Rafael', 'Villalba Mendez', '44072476', '/uploads/dni/dni_44072476_frente.jpg', '/uploads/dni/dni_44072476_dorso.jpg', 'maurybionico18@gmail.com', '3764889992', 'calle falsa 123', 'Misiones', 'Argentina', '2026-04-29 21:16:18');
+INSERT INTO `clientes` (`id_cliente`, `uuid`, `nombre`, `apellido`, `dni`, `dni_frente`, `dni_dorso`, `gmail`, `celular`, `domicilio`, `residencia`, `nacionalidad`, `created_at`) VALUES ();
 
 -- --------------------------------------------------------
 
@@ -83,21 +71,7 @@ CREATE TABLE `reservas` (
 -- Volcado de datos para la tabla `reservas`
 --
 
-INSERT INTO `reservas` (`id_reserva`, `uuid`, `id_cliente`, `fecha`, `turno`, `fondo`, `equipos`, `estado`, `created_at`) VALUES
-(1, '80e319f9bc18aba6ee67591d2a6357c8', 9, '2026-04-16', 'mañana', '', 'Camara Canon R6, Tripode Manfrotto', 'cancelada', '2026-04-16 14:49:08'),
-(3, '5e5b31c7cf35666ebe1ee416e26f39c0', 11, '2026-04-16', 'tarde', '', 'Camara Canon R6', 'confirmada', '2026-04-16 15:00:46'),
-(4, '2126b45c81d4eaf13581d8dbb49a5e03', 11, '2026-04-22', 'tarde', '', 'Camara Canon R6', 'confirmada', '2026-04-22 14:08:10'),
-(5, '29f69245857cecc72bbd732c30490f9c', 12, '2026-04-30', 'mañana', '', 'Camara Canon R6', 'confirmada', '2026-04-22 14:10:35'),
-(6, 'f989095c52e9573d901da2e4005fb3e8', 13, '2026-04-30', 'tarde', '', 'Camara Canon R6, Softbox 60x60, Tripode Manfrotto', 'confirmada', '2026-04-22 14:18:20'),
-(7, '02028658963ae58f88efd4e9b37e12e2', 9, '2026-04-24', 'tarde', '', 'Sin equipo extra', 'cancelada', '2026-04-23 15:58:57'),
-(8, 'bb430644ffaa5acc8c5541becc163ac4', 11, '2026-04-28', 'mañana', '', 'Sin equipo extra, Flash Visico V', 'confirmada', '2026-04-24 18:17:15'),
-(9, 'b1b1e149a750adfde5298c9165a591b1', 12, '2026-04-29', 'mañana', '', 'Sin equipo extra', 'confirmada', '2026-04-27 14:56:13'),
-(10, 'cc0a18d3b2d88a937da0205347e2d32d', 12, '2026-05-06', 'mañana', '', 'Sin equipo extra', 'confirmada', '2026-04-27 14:57:33'),
-(11, '9bfaa817440e49d61cde8e3ae479378a', 11, '2026-05-13', 'tarde', '', 'Sin equipo extra', 'confirmada', '2026-04-27 20:44:02'),
-(12, '26ddc721d70e861e776b8a2c740b7f55', 9, '2026-05-05', 'tarde', '', 'Sin equipo extra', 'confirmada', '2026-04-27 20:48:43'),
-(13, '71f9689f852b985c255c9407f815989f', 9, '2026-05-06', 'tarde', '', 'Sin equipo extra', 'confirmada', '2026-04-27 21:54:59'),
-(14, '4e49b911900feba0be486726e09a6782', 14, '2026-05-29', 'tarde', '', 'Sin equipo extra', 'confirmada', '2026-04-29 21:16:18'),
-(15, '720228b6457823ccdf47bfdd815bc8d4', 14, '2026-05-29', 'mañana', '', 'Sin equipo extra', 'confirmada', '2026-04-29 21:22:52');
+INSERT INTO `reservas` (`id_reserva`, `uuid`, `id_cliente`, `fecha`, `turno`, `fondo`, `equipos`, `estado`, `created_at`) VALUES();
 
 -- --------------------------------------------------------
 
@@ -119,7 +93,7 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id_usuario`, `gmail`, `google_id`, `contrasenia`, `rol`, `dni`) VALUES
-(1, 'maurybionico18@gmail.com', NULL, NULL, 'admin', NULL);
+(1, 'gmail@admin.com', NULL, NULL, 'admin', NULL);
 
 --
 -- Índices para tablas volcadas
