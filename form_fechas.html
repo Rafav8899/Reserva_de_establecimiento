@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="form_reserva.html">Log in</a>
+        </nav>
+    </header>
+
+    <section class="formulario">
+        
+        <form id="reservaForm" action="guardarReserva.php" method="POST">
+
+            <h3>1. Seleccioná un día</h3>
+
+            <div class="calendar">
+
+                <header>
+                    <button type="button" id="prev">◀</button>
+                    <span id="monthYear"></span>
+                    <button type="button" id="next">▶</button>
+                </header>
+
+                <!-- Encabezado de días -->
+                <div class="weekdays">
+                    <div>Dom</div>
+                    <div>Lun</div>
+                    <div>Mar</div>
+                    <div>Mié</div>
+                    <div>Jue</div>
+                    <div>Vie</div>
+                    <div>Sáb</div>
+                </div>
+
+                <!-- Días dinámicos -->
+                <div class="days" id="days"></div>
+
+            </div>
+
+            <input type="hidden" name="fecha" id="fechaSeleccionada" required>
+
+            <div class="seccionDetalles">
+                <p>
+                    <h3>2. Detalles de la reserva</h3>
+                </p>
+                <p>
+                    <label>Turno:
+                        <select id="turno_reserva" required>
+                            <option value="">--Elegir turno--</option>
+                                <option value="mañana">Mañana</option>
+                                <option value="tarde">Tarde</option>
+                        </select>
+                    </label>
+                </p>
+
+                <p>
+                    <div class="equipos-grid">
+                        <h3>Seleccioná el equipo que vas a usar:</h3>
+                        
+                        <label>
+                            <input type="checkbox" name="equipos[]" value="Camara Canon R6">
+                            <img src="img/canon.jpg" alt="Canon R6" width="50"> Cámara Canon R6
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="equipos[]" value="Softbox 60x60">
+                            <img src="img/softbox.jpg" alt="Softbox" width="50"> Softbox
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="equipos[]" value="Tripode Manfrotto">
+                            <img src="img/tripode.jpg" alt="Trípode" width="50"> Trípode
+                        </label>
+                    
+                    </div>
+                </p>
+<!-- 
+                <h3>3. Datos</h3>
+
+                <p>
+                    <input type="text" name="nombre" placeholder="Tu nombre" required>
+                </p> -->
+
+                    <button type="submit" id="btnReservar" >Confirmar Reserva</button>
+                
+            </div>
+        </form>
+    </section>
+        <script src="script.js"></script>
+
+        <script>
+            fetch("obtenerReservas.php")
+            .then(res => res.json())
+            .then(data =>{
+                window.fechasReservadas = data;
+                cargarCalendario();
+            });
+        </script>
+
+</body>
+</html>
