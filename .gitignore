@@ -1,3 +1,4 @@
 vendor/
 config/db_conection.php
 .env
+config-google.txt
