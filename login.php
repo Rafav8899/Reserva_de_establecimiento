@@ -3,7 +3,7 @@ require_once 'vendor/autoload.php';
 
 // Necesitás repetir la configuración del $client aquí para generar la URL
 $client = new Google_Client();
-$client->setClientId('CLIENT_ID.apps.googleusercontent.com');
+$client->setClientId('CLIENT_ID');
 $client->setRedirectUri('http://localhost/reserva_estudio/auth_google.php');
 $client->addScope("email");
 $client->addScope("profile");

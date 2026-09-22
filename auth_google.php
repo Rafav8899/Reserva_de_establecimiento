@@ -5,7 +5,7 @@ require_once 'vendor/autoload.php';
 require_once 'config/db_conection.php';
 
 // Configuración de Google (Cambiá estos valores por los tuyos)
-$clientID = 'TU_CLIENT_ID.apps.googleusercontent.com';
+$clientID = 'TU_CLIENT_ID';
 $clientSecret = 'TU_CLIENT_SECRET';
 $redirectUri = 'http://localhost/reserva_estudio/auth_google.php';
 
