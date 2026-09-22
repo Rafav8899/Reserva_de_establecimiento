@@ -51,7 +51,7 @@ $authUrl = $client->createAuthUrl();
     </header>
 
         <div class="login-container">
-            <h2>Ingresar al Estudio</h2>
+            <h2>Ingresar al Estudio</h2> por favor
         
             <form action="validar_acceso.php" method="POST">
                 <p>
