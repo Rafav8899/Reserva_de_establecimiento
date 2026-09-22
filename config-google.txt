@@ -1,0 +1,3 @@
+$clientID = '450145917690-17omii1mmaf8osi7s9iclgknbt972b51.apps.googleusercontent.com';
+$clientSecret = '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';
+$redirectUri = 'http://localhost/reserva_estudio/auth_google.php';
