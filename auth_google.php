@@ -9,8 +9,6 @@ $clientID = 'TU_CLIENT_ID_DE_GOOGLE';
 $clientSecret = 'TU_CLIENT_SECRET_DE_GOOGLE';
 $redirectUri = 'http://localhost/reserva_estudio/auth_google.php';
 
-
-
 $client = new Google_Client();
 
 // Forzar la desactivación de verificación SSL en cURL para entorno local
