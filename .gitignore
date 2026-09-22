@@ -1,4 +1,4 @@
 vendor/
 config/db_conection.php
 .env
-confing-google.txt
+# confing-google.txt
