@@ -111,7 +111,7 @@ try {
 
     enviarConfirmacionReserva($datosParaCorreoCliente, $datosParaCorreoReserva);
 
-        echo "<script>alert('Reserva confirmada con éxito. Por favor revise su correo.'); window.location.href='index.html';</script>";
+        echo "<script>alert('Reserva confirmada con éxito. Por favor revise su correo.'); window.location.href='index.php';</script>";
 
 
 } catch (Exception $e) {

@@ -1,3 +1,9 @@
+<?php
+
+session_start();
+require __DIR__ . '/config/db_conection.php';
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -57,8 +63,8 @@
 
             <h3>En caso de: </h3>
             <p>
-                No recibir confirmación: comunícate al correo <b>fotolabmidi@gmail.com</b> o por WhatsApp al <b>+54 9 3764 735604</b> (Coordinadora Suan) <br>
-                Sí recibir confirmación: Preséntate el día del turno concedido, con tu DNI en mano.
+                No recibir confirmación: comunícate al correo <b>fotolabmidi@gmail.com</b> o por WhatsApp al <b><a href="https://wa.me/543764723926" class="btn btn--secondary">+54 9 3764 735604</a></b> (Coordinadora Suan) <br>
+                Si ya recibiste la confirmación: Preséntate el día del turno concedido, con tu DNI en mano.
             </p>
             <h3>Aclaración: </h3>
             <p>

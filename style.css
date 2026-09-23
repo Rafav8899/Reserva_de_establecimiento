@@ -1,20 +1,16 @@
 :root{
     /* Colors */
-    --bg: #c2e0e0;
+    --bg: #c6cfcf;
     --surface: #f1f1f1;
     --text: #1a1a1a;
+    --sub-text-color: #383838;
     --header-bg: rgba(255,255,255,.85);
+    --hover-color:#2572b1;
 
-    --bg-color: #ffffff;
-    --bg-header: #ffffff;
-    --bg-dropdown: #ffffff;
-    --bg-cards:#e2e1e1;
-    --text-color: #080808;
+    /* --text-color: #080808; */
     --text-dark: #2c3e50;
     --accent-color: #dc3545;         /* Rojo para el botón de contacto */
     --accent-hover: #bb2d3b;
-    --sub-text-color: #383838;
-    --hover-color:#00559b;
 
         /* SOMBRAS */
     --shadow-header: 0 2px 10px rgba(0, 0, 0, 0.08);
@@ -34,6 +30,9 @@
     /* Layout */
     --max-width: 1100px;
     --radius: 12px;
+    --max-width: 1200px;
+    --padding-mobile: 1.25rem;
+    --padding-desktop: 2rem;
 
     /* Effects */
     --shadow: 0 8px 25px rgba(0,0,0,.08);
@@ -95,83 +94,57 @@
 
 .nav-menu{
     text-align:end;
-    /* border:solid; */
+}
 
-}
-.nav-menu a{
-    transition: all 0.5s ease 0s;
-    color: var(--text);
-    padding: 3px;
-    text-decoration: none;
-}
 .nav-menu a {
-  text-decoration: none;
-  color: var(--text);
-  font-weight: 600;
-  font-family: var(--font-base);
-  font-size: 0.95rem;
-  padding: 10px 0;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  transition: color var(--transition-speed) var(--transition-ease);
-  position: relative;
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 600;
+    font-family: var(--font-base);
+    font-size: 0.95rem;
+    padding: 10px 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: color var(--transition-speed) var(--transition-ease);
+    position: relative;
 }
-.nav a:hover{
-    border-bottom: solid 2px;
-    transition: var(--transition);
-    transition: 0.9s ease;
-    color: #00559b;
-    /* background-color: red; */
-}
-.nav a:active,
-.nav a:hover {
-    outline: 0 none;
-    color: #00559b;
-}
+
 /* Menú Principal */
 .nav-menu ul {
-  display: flex;
-  align-items: center;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  gap: 2rem;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 2rem;
 }
-
 .nav-menu ul > li {
-  position: relative;
+    position: relative;
 }
-
-
-
 .nav-menu a:hover,
 .nav-menu a:active{
-  color: var(--hover-color);
+    color: var(--hover-color);
 }
-
-
 /* Indicador animado debajo de cada enlace */
 .nav-menu ul > li > a::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0%;
-  height: 2px;
-  background-color: var(--hover-color);
-  transition: width var(--transition-speed) var(--transition-ease);
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: var(--hover-color);
+    transition: width var(--transition-speed) var(--transition-ease);
 }
-
 /* Hover y Estado Activo */
 .nav-menu  ul > li:hover > a,
 .nav-menu  ul > li.active > a {
-  color: var(--hover-color);
+    color: var(--hover-color);
 }
-
 .nav-menu  ul > li:hover > a::after,
 .nav-menu  ul > li.active > a::after {
-  width: 100%;
+    width: 100%;
 }
 
 /* Ícono del desplegable */
@@ -183,71 +156,8 @@
 .nav-menu nav > ul > li:hover > a i {
   transform: rotate(180deg);
 }
-/* ==========================================
-   3. SUBMENÚ DESPLEGABLE
-   ========================================== */
-.nav-menu .sub-menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  min-width: 120px;
-  background-color: var(--bg-dropdown);
-  box-shadow: var(--shadow-dropdown);
-  border-radius: var(--border-radius);
-  padding: 8px 0;
-  list-style: none;
-  margin: 0;
-  
-  /* Animación de apertura suave */
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0;
-
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(10px);
-  transition: all var(--transition-speed) var(--transition-ease);
-  z-index: 1050;
-}
-
-/* Revelar el submenú al pasar el cursor */
-.nav-menu ul > li:hover .sub-menu {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-}
-.nav-menu .sub-menu li{
-  position: static;
-  width: 100%;
-}
-
-.nav-menu .sub-menu li a {
-  display: block;
-  padding: 10px 18px;
-  font-family: var(--font-heading);
-  font-size: 14px;
-  color: var(--text-dark);
-  font-weight: 500;
-  text-decoration: none;
-  transition: background-color var(--transition-speed), color var(--transition-speed);
-}
-
-.nav-menu .sub-menu li a::after {
-  display: none; 
-}
-
-.nav-menu .sub-menu li a:hover {
-  background-color: rgba(0, 85, 155, 0.08);
-  color: var(--hover-color);
-}
-
-
-
-
 
 .btn-reservas{
-    /* border: solid; */
     text-align: center;
 }
 
@@ -256,6 +166,9 @@
 /* LOGIN */
 /* ============================  */
 
+.contenido{
+    background-color: red;
+}
 
 .login-container{
     background-color: var(--surface);
@@ -600,4 +513,111 @@ tr:hover {
 }
 .link-dni:hover { 
     text-decoration: underline;
+}
+
+
+/* RESPONSIVE PARA CELULARES */
+
+@media(min-width: 375px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: var(--font-main);
+        background-color: var(--color-bg);
+        color: var(--color-text);
+        line-height: 1.6;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    ul {
+        list-style: none;
+    }
+    .header {
+        display: flex; 
+        flex-direction: column;
+        justify-content: space-between; 
+        align-items: center; 
+        padding: 15px;
+        background-color: var(--header-bg);
+        border-radius: var(--border-radius);
+        box-shadow: var(--shadow-header);
+        gap: 15px;
+    }
+    .nav-menu {
+        width: 100%;
+        text-align: center;
+    }
+    .nav-menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        gap: 10px;
+        width: 100%;
+    }
+    .nav-menu ul > li {
+        width: 100%;
+        position: relative;
+    }
+    .nav-menu a {
+        text-decoration: none;
+        color: var(--text);
+        font-weight: 600;
+        font-family: var(--font-base);
+        font-size: 1rem;
+        padding: 8px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+        transition: color var(--transition-speed) var(--transition-ease);
+    }
+
+    .nav-menu a:hover,
+    .nav-menu a:active {
+        color: var(--hover-color);
+    }
+
+    /* Indicador animado */
+    .nav-menu ul > li > a::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0%;
+        height: 2px;
+        background-color: var(--hover-color);
+        transition: width var(--transition-speed) var(--transition-ease);
+    }
+
+    .nav-menu ul > li:hover > a::after,
+    .nav-menu ul > li.active > a::after {
+        width: 80%;
+    }
+
+    .nav-menu ul > li > a i {
+        font-size: 12px;
+        transition: transform var(--transition-speed) var(--transition-ease);
+    }
+    .btn-reservas {
+        text-align: center;
+        width: 100%;
+    }
+
+
+    .contenido{
+        width: 100%;
+        max-width: var(--max-width);
+        padding: var(--padding-mobile);
+        margin: 0 auto;
+    }
 }
