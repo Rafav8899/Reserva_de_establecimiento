@@ -47,7 +47,7 @@ $authUrl = $client->createAuthUrl();
         <nav class="nav-menu">
             <ul>
                 <li><a href="index.php" class="active">Inicio</a></li>
-                <li><a href="#reservar">Reservar</a></li>
+                <li><a href="form_reserva.php">Reservar</a></li>
                 <li>
                     <?php if (isset($_SESSION['user_rol']) && $_SESSION['user_rol'] === 'admin'): ?>
                     <!-- Este botón SOLO lo verá el admin -->

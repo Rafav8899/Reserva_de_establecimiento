@@ -374,7 +374,12 @@
     transition: var(--transition);
     color: var(--text);
 }
+.formReserva p{
+    color:var(--bg);
+    justify-self: center;
+}
 
+.formReserva input[type="file"],
 .formReserva input[type="text"],
 .formReserva input[type="email"],
 .formReserva textarea,
@@ -428,6 +433,83 @@
 }
 .formReserva select {
     cursor: pointer;
+}
+
+/* GRID DE EQUIPOS DE SELECCIÓN */
+/* --- Contenedor general de equipos --- */
+.equipos-container {
+    margin: 20px 0;
+    width: 100%;
+}
+
+.equipos-container h3 {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: var(--text-dark, #2c3e50);
+}
+
+/* --- Cuadrícula Responsiva --- */
+.equipos-grid {
+    display: grid;
+    /* Se adapta automáticamente: mínimo 140px por tarjeta, llenando el espacio */
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 12px;
+}
+
+/* --- Tarjeta individual tipo botón --- */
+.equipo-card {
+    background-color: var(--surface, #f1f1f1);
+    border: 2px solid #ddd;
+    border-radius: var(--radius, 8px);
+    padding: 12px 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+    user-select: none;
+}
+
+/* Ocultar el checkbox nativo pero mantener su accesibilidad y función */
+.equipo-card input[type="checkbox"] {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    accent-color: var(--selected, #4368ce);
+    cursor: pointer;
+}
+
+/* Imagen del equipo dentro de la tarjeta */
+.equipo-card img {
+    width: 50px;
+    height: 50px;
+    object-fit:cover;
+    margin-bottom: 8px;
+    border-radius: 4px;
+}
+
+/* Texto de la tarjeta */
+.equipo-card span {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--text, #1a1a1a);
+}
+
+/* Efectos al pasar el mouse (Hover) */
+.equipo-card:hover {
+    border-color: var(--hover-color, #2572b1);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* Efecto visual cuando el checkbox está seleccionado (Checked) */
+.equipo-card:has(input[type="checkbox"]:checked) {
+    background-color: rgba(67, 104, 206, 0.08);
+    border-color: var(--selected, #4368ce);
+    box-shadow: 0 0 0 1px var(--selected, #4368ce);
 }
 
 .formReserva button {
@@ -613,11 +695,49 @@ tr:hover {
         width: 100%;
     }
 
-
+/* =========================================
+    LOGIN & CONTENIDO GENERAL
+========================================= */
     .contenido{
         width: 100%;
         max-width: var(--max-width);
         padding: var(--padding-mobile);
         margin: 0 auto;
+    }
+    .login-container {
+        background-color: var(--surface);
+        text-align: center;
+        box-shadow: var(--shadow);
+        padding: 1.5rem;
+        border-radius: var(--radius);
+        width: 100%;
+        max-width: 400px;
+        margin: 2rem auto;
+    }
+    .login-container input[type="text"] {
+        padding: 0.8rem;
+        width: 100%;
+        font-size: 1rem;
+        border: 1px solid #ccc;
+        border-radius: var(--border-radius);
+        margin-top: 10px;
+    }
+
+    .informacion {
+        background-color: var(--surface);
+        border-radius: 10px;
+        border-top: solid #2ec26b 10px;
+        box-shadow: var(--shadow);
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+
+    .informacion ul {
+        padding: 1rem;
+    }
+
+    .informacion a {
+        text-decoration: none;
+        color: var(--text);
     }
 }
