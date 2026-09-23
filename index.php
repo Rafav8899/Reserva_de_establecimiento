@@ -17,24 +17,30 @@
                 ?>
             </strong>
         </span>
-        <nav class="nav">
-            <a href="index.php">Inicio</a>
-            <a href="#reservar">Reservar</a>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.php" class="active">Inicio</a></li>
+                <li><a href="#reservar">Reservar</a></li>
+                <li>
+                    <?php if (isset($_SESSION['user_rol']) && $_SESSION['user_rol'] === 'admin'): ?>
+                    <!-- Este botón SOLO lo verá el admin -->
+                    <a href="panel_reservas.php" class="btn-admin">Panel de Control</a>
+                    <!-- <a href="estadisticas.php" class="btn-admin">Reportes</a> -->
 
-            <?php if (isset($_SESSION['user_rol']) && $_SESSION['user_rol'] === 'admin'): ?>
-                <!-- Este botón SOLO lo verá el admin -->
-                <a href="panel_reservas.php" class="btn-admin">Panel de Control</a>
-                <!-- <a href="estadisticas.php" class="btn-admin">Reportes</a> -->
-                
-            <?php endif; ?>
-
-            <?php if (isset($_SESSION['user_id'])): ?>
+                <?php endif; ?>
+                </li>
+                <li>
+                    <?php if (isset($_SESSION['user_id'])): ?>
                 <!-- <a href="logout.php">Cerrar Sesión</a> -->
                 <a href="logout.php" style="color: #ff4d4d; text-decoration: none; font-weight: bold;">Cerrar Sesión</a>
-            <?php else: ?>
-                <a href="login.php">Iniciar Sesión</a>
-            <?php endif; ?>
+                <?php else: ?>
+                    <a href="login.php">Iniciar Sesión</a>
+                <?php endif; ?>
+                </li>
+                
+            </ul>
         </nav>
+        
     </header>
     <main class="contenido">
         <div class="informacion">

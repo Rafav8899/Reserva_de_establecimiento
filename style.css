@@ -63,22 +63,157 @@
     padding: 10px;
 }
 
-.nav{
+.nav-menu{
     text-align:end;
     /* border:solid; */
 
 }
-.nav a{
+.nav-menu a{
+    transition: all 0.5s ease 0s;
     color: var(--text);
     padding: 3px;
     text-decoration: none;
+}
+.nav-menu a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 600;
+  font-family: var(--font-base);
+  font-size: 0.95rem;
+  padding: 10px 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: color var(--transition-speed) var(--transition-ease);
+  position: relative;
 }
 .nav a:hover{
     border-bottom: solid 2px;
     transition: var(--transition);
     transition: 0.9s ease;
+    color: #00559b;
     /* background-color: red; */
 }
+.nav a:active,
+.nav a:hover {
+    outline: 0 none;
+    color: #00559b;
+}
+/* Menú Principal */
+.nav-menu ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 2rem;
+}
+
+.nav-menu ul > li {
+  position: relative;
+}
+
+
+
+.nav-menu a:hover,
+.nav-menu a:active{
+  color: var(--hover-color);
+}
+
+
+/* Indicador animado debajo de cada enlace */
+.nav-menu ul > li > a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: var(--hover-color);
+  transition: width var(--transition-speed) var(--transition-ease);
+}
+
+/* Hover y Estado Activo */
+.nav-menu  ul > li:hover > a,
+.nav-menu  ul > li.active > a {
+  color: var(--hover-color);
+}
+
+.nav-menu  ul > li:hover > a::after,
+.nav-menu  ul > li.active > a::after {
+  width: 100%;
+}
+
+/* Ícono del desplegable */
+.nav-menu ul > li > a i {
+  font-size: 12px;
+  transition: transform var(--transition-speed) var(--transition-ease);
+}
+
+.nav-menu nav > ul > li:hover > a i {
+  transform: rotate(180deg);
+}
+/* ==========================================
+   3. SUBMENÚ DESPLEGABLE
+   ========================================== */
+.nav-menu .sub-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 120px;
+  background-color: var(--bg-dropdown);
+  box-shadow: var(--shadow-dropdown);
+  border-radius: var(--border-radius);
+  padding: 8px 0;
+  list-style: none;
+  margin: 0;
+  
+  /* Animación de apertura suave */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all var(--transition-speed) var(--transition-ease);
+  z-index: 1050;
+}
+
+/* Revelar el submenú al pasar el cursor */
+.nav-menu ul > li:hover .sub-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.nav-menu .sub-menu li{
+  position: static;
+  width: 100%;
+}
+
+.nav-menu .sub-menu li a {
+  display: block;
+  padding: 10px 18px;
+  font-family: var(--font-heading);
+  font-size: 14px;
+  color: var(--text-dark);
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+
+.nav-menu .sub-menu li a::after {
+  display: none; 
+}
+
+.nav-menu .sub-menu li a:hover {
+  background-color: rgba(0, 85, 155, 0.08);
+  color: var(--hover-color);
+}
+
+
+
 
 
 .btn-reservas{
@@ -284,8 +419,9 @@
 
 .formReserva{
     margin: 30px auto 50px auto; /* espacio arriba y abajo */
-    padding: 20px;
-    background: var(--surface);
+    padding: 1rem 3rem;
+    /* background: var(--surface); */
+    background-color: red;
     border-radius: var(--radius);
     box-shadow: var(--shadow);
     display: flex;
@@ -300,7 +436,7 @@
 .formReserva input[type="email"],
 .formReserva textarea,
 .formReserva select{
-    padding: 10px 12px;
+    padding: 1rem 2rem;
     border: 1px solid #ccc;
     border-radius: 6px;
     font-size: 16px;
