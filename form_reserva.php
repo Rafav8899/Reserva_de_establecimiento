@@ -255,13 +255,13 @@ if (isset($_SESSION['id_usuario']) && $_SESSION['rol'] === 'cliente') {
 
                     <label class="equipo-card">
                         <input type="checkbox" name="equipos[]" value="Flash Visico IV">
-                        <img src="img/softbox.jpg" alt="Flash Visico IV">
+                        <img src="uploads/imgs/flash-visico-IV.webp" alt="Flash Visico IV">
                         <span>Flash Visico IV</span>
                     </label>
 
                     <label class="equipo-card">
                         <input type="checkbox" name="equipos[]" value="Flash Visico V">
-                        <img src="img/tripode.jpg" alt="Flash Visico V">
+                        <img src="uploads/imgs/flash-visico-V.webp" alt="Flash Visico V">
                         <span>Flash Visico V</span>
                     </label>
 
@@ -273,61 +273,61 @@ if (isset($_SESSION['id_usuario']) && $_SESSION['rol'] === 'cliente') {
 
                     <label class="equipo-card">
                         <input type="checkbox" name="equipos[]" value="Emisor">
-                        <img src="img/tripode.jpg" alt="Emisor">
+                        <img src="uploads/imgs/emisor-canon.webp" alt="Emisor">
                         <span>Emisor (compatible con Canon)</span>
                     </label>
 
                     <label class="equipo-card">
                         <input type="checkbox" name="equipos[]" value="Pie de luces">
-                        <img src="img/tripode.jpg" alt="Pie de luces">
+                        <img src="uploads/imgs/pie-de-luces-E.webp" alt="Pie de luces">
                         <span>Pie de luces</span>
                     </label>
 
                     <label class="equipo-card">
                         <input type="checkbox" name="equipos[]" value="Snoot">
-                        <img src="img/tripode.jpg" alt="Snoot">
+                        <img src="uploads/imgs/snoot.webp" alt="Snoot">
                         <span>Snoot</span>
                     </label>
 
                     <label class="equipo-card">
                         <input type="checkbox" name="equipos[]" value="Softbox 35cm x 140cm">
-                        <img src="img/tripode.jpg" alt="Softbox 35cm x 140cm">
+                        <img src="uploads/imgs/Softbox-35x140.webp" alt="Softbox 35cm x 140cm">
                         <span>Softbox 35cm x 140cm</span>
                     </label>
 
                     <label class="equipo-card">
                         <input type="checkbox" name="equipos[]" value="Softbox 90 x 120cm">
-                        <img src="img/tripode.jpg" alt="Softbox 90 x 120cm">
+                        <img src="uploads/imgs/sofbox-90x120.webp" alt="Softbox 90 x 120cm">
                         <span>Softbox 90 x 120cm</span>
                     </label>
 
                     <label class="equipo-card">
                         <input type="checkbox" name="equipos[]" value="Jirafa">
-                        <img src="img/tripode.jpg" alt="Jirafa">
+                        <img src="uploads/imgs/tripode-jirafa.webp" alt="Jirafa">
                         <span>Jirafa</span>
                     </label>
 
                     <label class="equipo-card">
                         <input type="checkbox" name="equipos[]" value="Softbox Octogonal 150cm">
-                        <img src="img/tripode.jpg" alt="Softbox Octogonal 150cm">
+                        <img src="uploads/imgs/softbox-octogonal-150.webp" alt="Softbox Octogonal 150cm">
                         <span>Softbox Octogonal 150cm</span>
                     </label>
 
                     <label class="equipo-card">
                         <input type="checkbox" name="equipos[]" value="Reflector curvo Eyerlighter">
-                        <img src="img/tripode.jpg" alt="Reflector curvo Eyerlighter">
+                        <img src="uploads/imgs/reflector-Eyelighter.webp" alt="Reflector curvo Eyerlighter">
                         <span>Reflector curvo Eyerlighter</span>
                     </label>
 
                     <label class="equipo-card">
                         <input type="checkbox" name="equipos[]" value="Portafondo">
-                        <img src="img/tripode.jpg" alt="Portafondo">
+                        <img src="uploads/imgs/porta-fondo.webp" alt="Portafondo">
                         <span>Portafondo</span>
                     </label>
 
                     <label class="equipo-card">
                         <input type="checkbox" name="equipos[]" value="Pantalla reflectora 5 en 1">
-                        <img src="img/tripode.jpg" alt="Pantalla reflectora 5 en 1">
+                        <img src="uploads/imgs/pantalla-reflectora.webp" alt="Pantalla reflectora 5 en 1">
                         <span>Pantalla reflectora 5 en 1</span>
                     </label>
                 </div>
