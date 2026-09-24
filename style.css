@@ -484,8 +484,8 @@
 
 /* Imagen del equipo dentro de la tarjeta */
 .equipo-card img {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     object-fit:cover;
     margin-bottom: 8px;
     border-radius: 4px;
@@ -500,14 +500,14 @@
 
 /* Efectos al pasar el mouse (Hover) */
 .equipo-card:hover {
-    border-color: var(--hover-color, #2572b1);
+    border-color: var(--hover-color, #8ca7bd);
     transform: translateY(-2px);
     box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
 
 /* Efecto visual cuando el checkbox está seleccionado (Checked) */
 .equipo-card:has(input[type="checkbox"]:checked) {
-    background-color: rgba(67, 104, 206, 0.08);
+    background-color: rgba(113, 126, 161, 0.26);
     border-color: var(--selected, #4368ce);
     box-shadow: 0 0 0 1px var(--selected, #4368ce);
 }
