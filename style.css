@@ -166,9 +166,9 @@
 /* LOGIN */
 /* ============================  */
 
-.contenido{
+/* .contenido{
     background-color: red;
-}
+} */
 
 .login-container{
     background-color: var(--surface);
@@ -363,8 +363,8 @@
 .formReserva{
     margin: 30px auto 50px auto; /* espacio arriba y abajo */
     padding: 1rem 3rem;
-    /* background: var(--surface); */
-    background-color: red;
+    background: var(--surface);
+    /* background-color: red; */
     border-radius: var(--radius);
     box-shadow: var(--shadow);
     display: flex;
@@ -375,7 +375,7 @@
     color: var(--text);
 }
 .formReserva p{
-    color:var(--bg);
+    color:var(--color-text);
     justify-self: center;
 }
 
@@ -484,8 +484,8 @@
 
 /* Imagen del equipo dentro de la tarjeta */
 .equipo-card img {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     object-fit:cover;
     margin-bottom: 8px;
     border-radius: 4px;
