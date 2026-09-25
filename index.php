@@ -20,7 +20,7 @@ require __DIR__ . '/config/db_conection.php';
                 if (isset($_SESSION['user_id'])):
                     echo $_SESSION['user_nombre'];
                 endif;
-                ?>
+                ?> 
             </strong>
         </span>
         <nav class="nav-menu">

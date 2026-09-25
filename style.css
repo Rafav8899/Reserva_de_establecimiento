@@ -628,8 +628,11 @@ tr:hover {
         padding: 15px;
         background-color: var(--header-bg);
         border-radius: var(--border-radius);
-        box-shadow: var(--shadow-header);
+        /* box-shadow: var(--shadow-header); */
         gap: 15px;
+    }
+    .header .nav-menu{
+        display: none;
     }
     .nav-menu {
         width: 100%;
