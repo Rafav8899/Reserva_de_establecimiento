@@ -629,16 +629,6 @@ tr:hover {
         display: none !important;
     }
     /* 
-    .nav-menu ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        gap: 10px;
-        width: 100%;
-    }
     .nav-menu ul > li {
         width: 100%;
         position: relative;
