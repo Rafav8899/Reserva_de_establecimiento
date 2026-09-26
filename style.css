@@ -85,18 +85,23 @@
     padding: 20px;
 }
 
-.header{
+/* =========================================
+   HEADER Y MENÚ (Escritorio por defecto)
+========================================= */
+.header {
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
     padding: 10px 2rem;
+    background-color: var(--header-bg, #ffffff);
+    box-shadow: var(--shadow-header);
 }
 
-.header .nav-menu{
-    display:block;
+/* Forzamos que en escritorio SIEMPRE esté visible */
+.header .nav-menu {
+    display: block !important; 
 }
 
-/* Menú Principal */
 .nav-menu ul {
     display: flex;
     align-items: center;
@@ -104,8 +109,9 @@
     margin: 0;
     padding: 0;
     gap: 2rem;
-    justify-content: flex-end;
+    justify-content: flex-end; /* Envía los enlaces hacia la derecha */
 }
+
 .nav-menu ul > li {
     position: relative;
 }
@@ -125,9 +131,10 @@
 }
 
 .nav-menu a:hover,
-.nav-menu a:active{
+.nav-menu a:active {
     color: var(--hover-color);
 }
+
 /* Indicador animado debajo de cada enlace */
 .nav-menu ul > li > a::after {
     content: '';
@@ -139,24 +146,20 @@
     background-color: var(--hover-color);
     transition: width var(--transition-speed) var(--transition-ease);
 }
-/* Hover y Estado Activo */
-.nav-menu  ul > li:hover > a,
-.nav-menu  ul > li.active > a {
-    color: var(--hover-color);
-}
-.nav-menu  ul > li:hover > a::after,
-.nav-menu  ul > li.active > a::after {
+
+.nav-menu ul > li:hover > a::after,
+.nav-menu ul > li.active > a::after {
     width: 100%;
 }
 
 /* Ícono del desplegable */
 .nav-menu ul > li > a i {
-  font-size: 12px;
-  transition: transform var(--transition-speed) var(--transition-ease);
+    font-size: 12px;
+    transition: transform var(--transition-speed) var(--transition-ease);
 }
 
-.nav-menu nav > ul > li:hover > a i {
-  transform: rotate(180deg);
+.nav-menu ul > li:hover > a i {
+    transform: rotate(180deg);
 }
 
 .btn-reservas{
