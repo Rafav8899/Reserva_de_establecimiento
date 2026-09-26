@@ -648,24 +648,6 @@ tr:hover {
     .nav-menu a:active {
         color: var(--hover-color);
     }
-
-    /* Indicador animado */
-    /* .nav-menu ul > li > a::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 0%;
-        height: 2px;
-        background-color: var(--hover-color);
-        transition: width var(--transition-speed) var(--transition-ease);
-    }
-
-    .nav-menu ul > li:hover > a::after,
-    .nav-menu ul > li.active > a::after {
-        width: 80%;
-    }
  */
     .btn-reservas {
         text-align: center;
