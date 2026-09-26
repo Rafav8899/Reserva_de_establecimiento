@@ -628,10 +628,7 @@ tr:hover {
     .header .nav-menu{
         display: none !important;
     }
-    /* .nav-menu {
-        width: 100%;
-        text-align: center;
-    }
+    /* 
     .nav-menu ul {
         display: flex;
         flex-direction: column;
