@@ -629,10 +629,7 @@ tr:hover {
         display: none !important;
     }
     /* 
-    .nav-menu ul > li {
-        width: 100%;
-        position: relative;
-    }
+    
     .nav-menu a {
         text-decoration: none;
         color: var(--text);
