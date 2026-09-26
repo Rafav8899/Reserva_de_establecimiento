@@ -666,7 +666,7 @@ tr:hover {
     }
 
     /* Indicador animado */
-    .nav-menu ul > li > a::after {
+    /* .nav-menu ul > li > a::after {
         content: '';
         position: absolute;
         bottom: 0;
@@ -686,7 +686,7 @@ tr:hover {
     .nav-menu ul > li > a i {
         font-size: 12px;
         transition: transform var(--transition-speed) var(--transition-ease);
-    }
+    } */
     .btn-reservas {
         text-align: center;
         width: 100%;
