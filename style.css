@@ -178,7 +178,6 @@
     text-align: center;
     box-shadow: var(--shadow);
     padding: 2rem;
-    /* background-color: red; */
 }
 .login-container input[type="text"]{
     padding: 1rem;
