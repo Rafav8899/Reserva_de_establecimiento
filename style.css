@@ -666,11 +666,7 @@ tr:hover {
     .nav-menu ul > li.active > a::after {
         width: 80%;
     }
-
-    .nav-menu ul > li > a i {
-        font-size: 12px;
-        transition: transform var(--transition-speed) var(--transition-ease);
-    } */
+ */
     .btn-reservas {
         text-align: center;
         width: 100%;
