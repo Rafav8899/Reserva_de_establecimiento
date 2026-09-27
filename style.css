@@ -98,9 +98,9 @@
 }
 
 /* Forzamos que en escritorio SIEMPRE esté visible */
-.header .nav-menu {
+/* .header .nav-menu {
     display: block !important; 
-}
+} */
 
 .nav-menu ul {
     display: flex;
@@ -112,9 +112,9 @@
     justify-content: flex-end; /* Envía los enlaces hacia la derecha */
 }
 
-.nav-menu ul > li {
+/* .nav-menu ul > li {
     position: relative;
-}
+} */
 
 .nav-menu a {
     text-decoration: none;
@@ -626,7 +626,7 @@ tr:hover {
         padding: 10px;
     }
     .header .nav-menu{
-        display: none !important;
+        display: none;
     }
 
     
