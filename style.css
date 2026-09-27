@@ -600,7 +600,7 @@ tr:hover {
         list-style: none;
     }
     .header {
-        padding: 10px;
+        padding: 1rem 2rem;
     }
     .header .nav-menu{
         display: none !important;
@@ -613,6 +613,7 @@ tr:hover {
         max-width: var(--max-width);
         padding: var(--padding-mobile);
         margin: 0 auto;
+        /* padding: 1rem 2rem; */
     }
     .login-container {
         background-color: var(--surface);
@@ -638,7 +639,7 @@ tr:hover {
         border-radius: 10px;
         border-top: solid #2ec26b 10px;
         box-shadow: var(--shadow);
-        padding: 1rem;
+        padding: 1rem 2rem;
         margin-top: 1rem;
     }
 
