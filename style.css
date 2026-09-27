@@ -75,9 +75,11 @@
 *{
     /* margin: 0; */
     padding: 2px;
+    /* width: 100%; */
 }
 
 .body{
+    /* width: 100%; */
     font-family: var(--font-main);
     background-color: var(--bg);
     transition: var(--transition);
@@ -95,8 +97,9 @@
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
-    padding: 15px 2rem;
-    width: 100%;
+    padding: 1rem 2rem;
+    /* width: 100%; */
+    background-color: var(--header-bg);
 }
 
 /* Forzamos explícitamente que en escritorio se muestre */
