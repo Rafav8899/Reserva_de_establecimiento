@@ -602,7 +602,7 @@ tr:hover {
 
 /* RESPONSIVE PARA CELULARES */
 
-@media(min-width: 375px){
+@media (min-width: 768px){
     *{
         margin: 0;
         padding: 0;
@@ -633,7 +633,7 @@ tr:hover {
     .btn-reservas {
         text-align: center;
         width: 100%;
-    } */
+    } 
 
 /* =========================================
     LOGIN & CONTENIDO GENERAL
