@@ -168,15 +168,16 @@
 }
 .informacion ul{
     padding: 1rem 2rem;
-    background-color: yellow;
+    /* background-color: yellow; */
 }
 .informacion a{
     text-decoration: none;
     color:var(--text);
 }
-.informacion p{
-    padding: 1rem;
-    background-color: blue;
+
+.informacion h3{
+    padding-top: 1rem;
+    background-color: #2572b1;
 }
 
 /* ============================ */
