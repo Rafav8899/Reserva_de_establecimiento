@@ -133,12 +133,19 @@
     gap: 6px;
     transition: color var(--transition-speed) var(--transition-ease);
 }
+.nav-menu a:hover{
+    color: var(--hover-color);
+}
 
 .btn-reservas{
     text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: color var(--transition-speed) var(--transition-ease);
 }
-
-
+.btn-reservas:hover{
+    color: var(--hover-color);
+}
 /* ============================ */
 /* LOGIN */
 /* ============================  */
@@ -155,17 +162,20 @@
 
 .contenido{
     padding: 2rem;
+    /* background-color: green; */
     /* text-align: center; */
 }
 
 .informacion{
-    background-color: red;
-    /* background-color: var(--surface); */
+    /* background-color: red; */
+    background-color: var(--surface);
     border-radius: 10px;
     border-top: solid #2ec26b 20px;
     box-shadow: var(--shadow);
     padding: 1rem 3rem;
     text-align: center;
+    width: 60%;
+    justify-self: center;
 }
 .informacion ul{
     padding: 1rem 2rem;
@@ -174,6 +184,10 @@
 .informacion a{
     text-decoration: none;
     color:var(--text);
+}
+.informacion p{
+    padding: 5px;
+    background-color: blue;
 }
 
 /* =========================================
@@ -592,13 +606,14 @@ tr:hover {
         line-height: 1.6;
         transition: background-color 0.3s ease, color 0.3s ease;
     }
-    ul {
+    /* ul {
         list-style: none;
-    }
+    } */
     .header {
         justify-content: center;
         text-align: center;
         padding: 1rem 2rem;
+
     }
     .header .nav-menu{
         display: none !important;
@@ -613,6 +628,37 @@ tr:hover {
         margin: 0 auto;
         /* padding: 1rem 2rem; */
     }
+
+    .informacion {
+        /* background-color: var(--surface); */
+        border-radius: 10px;
+        border-top: solid #2ec26b 15px;
+        box-shadow: var(--shadow);
+        padding: var(--padding-mobile);
+        margin-top: 1rem;
+        /* text-align: center; */
+    }
+    .informacion b{
+        color: var(--text-dark);
+    }
+    .informacion p{
+        padding: 1.5px;
+    }
+
+    .informacion ul {
+        padding: 1rem 2rem;
+    }
+
+    .informacion a {
+        text-decoration: none;
+        color: var(--text);
+    }
+    .informacion a:hover {
+        text-decoration: none;
+        color: var(--hover-color);
+        transition: var(--transition-speed);
+    }
+
     .login-container {
         background-color: var(--surface);
         text-align: center;
@@ -632,27 +678,5 @@ tr:hover {
         margin-top: 10px;
     }
 
-    .informacion {
-        /* background-color: var(--surface); */
-        border-radius: 10px;
-        border-top: solid #2ec26b 15px;
-        box-shadow: var(--shadow);
-        padding: var(--padding-mobile);
-        margin-top: 1rem;
-        /* text-align: center; */
-    }
-
-    .informacion ul {
-        padding: 1rem 2rem;
-    }
-
-    .informacion a {
-        text-decoration: none;
-        color: var(--text);
-    }
-    .informacion a:hover {
-        text-decoration: none;
-        color: var(--hover-color);
-        transition: var(--transition-speed);
-    }
+    
 }

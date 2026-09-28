@@ -49,11 +49,11 @@ require __DIR__ . '/config/db_conection.php';
     </header>
     <main class="contenido">
         <div class="informacion">
-            <h1>Reserva - Estudio Fotográfico Midi</h1>
+            <h2>Reserva - Estudio Fotográfico Midi</h2>
             <p>
                 <b>Solicitud de reserva del estudio fotográfico Midi, para proyectos experimentales y/o profesionales</b>
             </p>
-            <h2>Pasos</h2>
+            <h3>Pasos</h3>
             <p>
                 1. Completa los campos con tus datos personales y envía éste formulario <br>
                 2. Aguarda la confirmación vía mail desde el correo del Fotolab Midi. <br>
@@ -94,9 +94,9 @@ require __DIR__ . '/config/db_conection.php';
                     </li>
                 </ul>
             </p>
-            <div class="btn-reservas">
-                <a href="form_reserva.php" name="reservar">Reservar</a>
-            </div>
+            <!-- <div class="btn-reservas"> -->
+                <a href="form_reserva.php" name="reservar" class="btn-reservas">Reservar</a>
+            <!-- </div> -->
         </div>
     </main>
 </body>
