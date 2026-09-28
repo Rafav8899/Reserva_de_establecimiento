@@ -569,14 +569,6 @@ tr:hover {
     text-decoration: underline;
 }
 
-
-/* @media (max-width: 767px) {
-    Únicamente aquí adentro se ocultan los enlaces en celulares
-    .header .nav-menu {
-        display: none !important;
-    }
-} */
-
 /* RESPONSIVE PARA CELULARES */
 
 @media (max-width: 768px){
