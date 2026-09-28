@@ -146,26 +146,15 @@
 .btn-reservas:hover{
     color: var(--hover-color);
 }
+
 /* ============================ */
-/* LOGIN */
-/* ============================  */
-
-.login-container{
-    background-color: var(--surface);
-    text-align: center;
-    box-shadow: var(--shadow);
-    padding: 2rem;
-}
-.login-container input[type="text"]{
-    padding: 1rem;
-}
-
+/* INFORMACIÓN INDEX */
+/* ============================ */
 .contenido{
     padding: 2rem;
     /* background-color: green; */
     /* text-align: center; */
 }
-
 .informacion{
     /* background-color: red; */
     background-color: var(--surface);
@@ -186,9 +175,24 @@
     color:var(--text);
 }
 .informacion p{
-    padding: 5px;
+    padding: 1rem;
     background-color: blue;
 }
+
+/* ============================ */
+/* LOGIN */
+/* ============================  */
+
+.login-container{
+    background-color: var(--surface);
+    text-align: center;
+    box-shadow: var(--shadow);
+    padding: 2rem;
+}
+.login-container input[type="text"]{
+    padding: 1rem;
+}
+
 
 /* =========================================
    CALENDARIO
