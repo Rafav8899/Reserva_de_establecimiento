@@ -46,7 +46,6 @@ require __DIR__ . '/config/db_conection.php';
                 
             </ul>
         </nav>
-        
     </header>
     <main class="contenido">
         <div class="informacion">
