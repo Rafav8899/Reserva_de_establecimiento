@@ -48,14 +48,14 @@ if (isset($_SESSION['id_usuario']) && $_SESSION['rol'] === 'cliente') {
     <title>RESERVAS</title>
 </head>
 <body class="body">
-    <header style="display: flex; justify-content: space-between; align-items: center; padding: 10px;">
+    <header class="header">
         <span>Bienvenido
             <strong> 
                 <?php 
                 if (isset($_SESSION['user_id'])):
                     echo $_SESSION['user_nombre'];
                 endif;
-                ?>
+                ?> 
             </strong>
         </span>
         <nav class="nav-menu">

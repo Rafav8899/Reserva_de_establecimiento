@@ -34,20 +34,20 @@ $authUrl = $client->createAuthUrl();
     <title>Login</title>
 </head>
 <body class="body">
-    <header style="display: flex; justify-content: space-between; align-items: center; padding: 10px;">
-
+    <header class="header">
+        <span>Bienvenido
             <strong> 
                 <?php 
                 if (isset($_SESSION['user_id'])):
                     echo $_SESSION['user_nombre'];
                 endif;
-                ?>
+                ?> 
             </strong>
-        
+        </span>
         <nav class="nav-menu">
             <ul>
                 <li><a href="index.php" class="active">Inicio</a></li>
-                <li><a href="form_reserva.php">Reservar</a></li>
+                <li><a href="#reservar">Reservar</a></li>
                 <li>
                     <?php if (isset($_SESSION['user_rol']) && $_SESSION['user_rol'] === 'admin'): ?>
                     <!-- Este botón SOLO lo verá el admin -->
@@ -63,8 +63,7 @@ $authUrl = $client->createAuthUrl();
                 <?php else: ?>
                     <a href="login.php">Iniciar Sesión</a>
                 <?php endif; ?>
-                </li>
-                
+                </li>    
             </ul>
         </nav>
     </header>
