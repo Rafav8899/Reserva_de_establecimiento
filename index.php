@@ -55,9 +55,17 @@
             </p>
             <h3>Pasos</h3>
             <p>
-                1. Completa los campos con tus datos personales y envía éste formulario <br>
-                2. Aguarda la confirmación vía mail desde el correo del Fotolab Midi. <br>
-                3. Abona el alquiler del espacio con el <b>QR (de Mercado Pago)</b> el día de la sesión. Consulte al encargado del Fotolab de turno, dónde abonar.
+                <ol>
+                    <li>
+                        Completa los campos con tus datos personales y envía éste formulario
+                    </li>
+                    <li>
+                        Aguarda la confirmación vía mail desde el correo del Fotolab Midi.
+                    </li>
+                    <li>
+                        Abona el alquiler del espacio con el <b>QR (de Mercado Pago)</b> el día de la sesión. Consulte al encargado del Fotolab de turno, dónde abonar.
+                    </li>
+                </ol> 
             </p>
 
             <h3>En caso de: </h3>
@@ -66,7 +74,7 @@
                 Si ya recibiste la confirmación: Preséntate el día del turno concedido, con tu DNI en mano.
             </p>
             <h3>Aclaración: </h3>
-            <p>
+            <!-- <p> -->
                 <ul>
                     <li>
                         *IMPORTANTE: tener conocimiento y experiencia en el manejo de equipos de iluminación fotográfica. En caso de no poseerlo, se le recomienda buscar a un fotógrafo profesional que pueda hacer la reserva y asistir/acompañar al lugar para realizar la sesión fotográfica. No obstante, desde el Midi, pronto se habilitarán cursos de iluminación en Estudio con certificación para uso de los equipos Midi del FotoLab que lo habilitarán a realizar las reservas del estudio y equipos para su correcta manipulación.
@@ -93,7 +101,7 @@
                         Se solicita a quienes reserven para producciones experimentales  o comerciales contemplar llevar protectores de pisadas, para las personas que pisan los fondos de papel, de ésta manera se pretende evitar manchar o ensuciar los mismos.
                     </li>
                 </ul>
-            </p>
+            <!-- </p> -->
             <!-- <div class="btn-reservas"> -->
                 <a href="form_reserva.php" name="reservar" class="btn-reservas">Reservar</a>
             <!-- </div> -->

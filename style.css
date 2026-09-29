@@ -166,7 +166,7 @@
     width: 60%;
     justify-self: center;
 }
-.informacion ul{
+.informacion ul ol{
     padding: 1rem 2rem;
     /* background-color: yellow; */
 }
@@ -649,6 +649,8 @@ tr:hover {
     }
     .informacion p{
         padding: 1.5px;
+        justify-self: flex-start !important;
+        font-weight: 300;
     }
 
     .informacion ul {
