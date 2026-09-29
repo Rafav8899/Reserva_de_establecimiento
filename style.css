@@ -145,27 +145,40 @@
 }
 .btn-reservas:hover{
     color: var(--hover-color);
+    justify-self: center;
 }
 
 /* ============================ */
 /* INFORMACIÓN INDEX */
 /* ============================ */
 .contenido{
-    padding: 2rem;
-    /* background-color: green; */
+    width: 100%;
+    max-width: 80%;
+    padding:  1.5rem;
+    margin: 2rem auto;
+    background-color: green;
     /* text-align: center; */
 }
 .informacion{
     /* background-color: red; */
     background-color: var(--surface);
-    border-radius: 10px;
+    border-radius: 12px;
     border-top: solid #2ec26b 20px;
     box-shadow: var(--shadow);
-    padding: 1rem 3rem;
-    text-align: center;
+    padding: 2.5rem;
+    text-align: left;
     width: 60%;
     justify-self: center;
 }
+
+.informacion p,
+.informacion h2, 
+.informacion h3{
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .informacion ul ol{
     padding: 1rem 2rem;
     /* background-color: yellow; */
@@ -173,11 +186,6 @@
 .informacion a{
     text-decoration: none;
     color:var(--text);
-}
-
-.informacion h3{
-    padding-top: 1rem;
-    background-color: #2572b1;
 }
 
 /* ============================ */
