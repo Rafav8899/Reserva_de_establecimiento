@@ -152,7 +152,7 @@
     max-width: 80%;
     padding:  1.5rem;
     margin: 2rem auto;
-    background-color: green;
+    /* background-color: green; */
     /* text-align: center; */
 }
 .informacion{
@@ -225,6 +225,96 @@
     padding: 1rem;
 }
 
+
+/* =========================================
+   ANIMACIONES
+========================================= */
+
+.fade{
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all .2s ease;
+}
+
+.formulario{
+    background-color: #3498db;
+    padding: 2rem 2rem;
+    margin: 0;
+    /* width: 80%; */
+}
+
+.formReserva{
+    margin: 30px auto 50px auto; /* espacio arriba y abajo */
+    padding: 2rem 3rem;
+    background: var(--surface);
+    /* background-color: red; */
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-sizing: border-box;
+    transition: var(--transition);
+    color: var(--text);
+    text-align: center;
+}
+.formReserva p{
+    color:var(--color-text);
+    /* justify-self: center; */
+    /* display: flex; */
+}
+
+.formReserva input[type="file"],
+.formReserva input[type="text"],
+.formReserva input[type="email"],
+.formReserva textarea,
+.formReserva select{
+    padding: 1rem 2rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    width: 50%;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    background: var(--surface);
+    color: var(--text);
+}
+
+.formReserva h3 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    text-align: center;
+}
+.formReserva input [type="text"]:focus,
+.formReserva select:focus{
+    border-color:#4368ce;
+    outline:none;
+    box-shadow: 0 0 6px rgba(67, 104, 206, 0.3);
+}
+.formReserva select {
+    cursor: pointer;
+}
+.formReserva button {
+    padding: 12px;
+    background-color: #4368ce;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.formReserva button:hover {
+    background-color: #3b5ab5;
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(67,104,206,0.2);
+}
+
+.formReserva select {
+    cursor: pointer;
+}
 
 /* =========================================
    CALENDARIO
@@ -374,91 +464,6 @@
 }
 .seleccionada:hover{
     background: var(--selected);
-}
-
-/* =========================================
-   ANIMACIONES
-========================================= */
-
-.fade{
-    opacity: 0;
-    transform: translateY(10px);
-    transition: all .2s ease;
-}
-
-.formReserva{
-    margin: 30px auto 50px auto; /* espacio arriba y abajo */
-    padding: 1rem 3rem;
-    background: var(--surface);
-    /* background-color: red; */
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    box-sizing: border-box;
-    transition: var(--transition);
-    color: var(--text);
-}
-.formReserva p{
-    color:var(--color-text);
-    justify-self: center;
-}
-
-.formReserva input[type="file"],
-.formReserva input[type="text"],
-.formReserva input[type="email"],
-.formReserva textarea,
-.formReserva select{
-    padding: 1rem 2rem;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 16px;
-    width: 100%;
-    box-sizing: border-box;
-    transition: all 0.3s ease;
-    background: var(--surface);
-    color: var(--text);
-}
-
-.formReserva h3 {
-    margin: 0 0 10px 0;
-    font-size: 20px;
-    text-align: center;
-}
-.formReserva input [type="text"]:focus,
-.formReserva select:focus{
-    border-color:#4368ce;
-    outline:none;
-    box-shadow: 0 0 6px rgba(67, 104, 206, 0.3);
-}
-.formReserva select {
-    cursor: pointer;
-}
-.formReserva button {
-    padding: 12px;
-    background-color: #4368ce;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.formReserva button:hover {
-    background-color: #3b5ab5;
-    transform: scale(1.03);
-    box-shadow: 0 4px 12px rgba(67,104,206,0.2);
-}
-
-.formulario{
-    padding: 1rem;
-    margin: 0;
-}
-.formReserva select {
-    cursor: pointer;
 }
 
 /* GRID DE EQUIPOS DE SELECCIÓN */

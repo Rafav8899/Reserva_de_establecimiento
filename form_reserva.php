@@ -61,7 +61,7 @@ if (isset($_SESSION['id_usuario']) && $_SESSION['rol'] === 'cliente') {
         <nav class="nav-menu">
             <ul>
                 <li><a href="index.php" class="active">Inicio</a></li>
-                <li><a href="#reservar">Reservar</a></li>
+                <!-- <li><a href="#reservar">Reservar</a></li> -->
                 <li>
                     <?php if (isset($_SESSION['user_rol']) && $_SESSION['user_rol'] === 'admin'): ?>
                     <!-- Este botón SOLO lo verá el admin -->
@@ -83,7 +83,8 @@ if (isset($_SESSION['id_usuario']) && $_SESSION['rol'] === 'cliente') {
         </nav>
     </header>
     
-    <section class="formulario">
+    <main class="contenido">
+        <section class="formulario">
 
         <form class="formReserva" action="procesar_reservas.php" method="post" enctype="multipart/form-data">
             <p>
@@ -350,6 +351,7 @@ if (isset($_SESSION['id_usuario']) && $_SESSION['rol'] === 'cliente') {
 
         </form>
     </section>
+    </main>
 
     <!-- Mensajes -->
     <div id="mensaje"></div>
