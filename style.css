@@ -178,10 +178,18 @@
     margin-left: auto;
     margin-right: auto;
 }
+.informacion h3{
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
 
-.informacion ul ol{
-    padding: 1rem 2rem;
-    /* background-color: yellow; */
+.informacion ol,
+.informacion ul{
+    max-width: 750px;       /* Mantiene el mismo ancho cómodo de lectura que los párrafos */
+    margin: 1rem auto;      /* Centra el bloque de la lista completa en el medio de la pantalla */
+    padding-left: 1.5rem;   /* Asegura espacio para los números o viñetas */
+    text-align: left;       /* Mantiene los textos de los ítems alineados a la izquierda */
+    display: block;
 }
 .informacion a{
     text-decoration: none;
