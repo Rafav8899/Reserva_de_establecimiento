@@ -107,5 +107,25 @@
             <!-- </div> -->
         </div>
     </main>
+    
+
+    <!-- 
+    <p>
+        <h2>CONTENIDO PARA BORRAR Y HACER COMMITS (por las dudas)</h2>
+    </p>
+    
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus culpa quam voluptatem eaque suscipit animi numquam itaque blanditiis, rem temporibus corrupti totam dignissimos soluta illum quas harum sint perspiciatis inventore.
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias beatae debitis omnis, voluptatum, exercitationem reprehenderit voluptatibus eligendi iste, ratione architecto consequuntur quod laborum nostrum quisquam minima voluptatem amet vero nesciunt.
+
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus beatae deleniti quidem totam. Eum nisi sunt quibusdam maiores dolorem pariatur aliquid blanditiis, enim, necessitatibus consequatur ipsum error facere architecto temporibus.
+    </p> 
+    -->
 </body>
 </html>
