@@ -143,10 +143,6 @@
     font-weight: 600;
     transition: color var(--transition-speed) var(--transition-ease);
 }
-.btn-reservas:hover{
-    color: var(--hover-color);
-    justify-self: center;
-}
 
 /* ============================ */
 /* INFORMACIÓN INDEX */
@@ -191,9 +187,28 @@
     text-align: left;       /* Mantiene los textos de los ítems alineados a la izquierda */
     display: block;
 }
+.informacion li {
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+}
+
 .informacion a{
     text-decoration: none;
     color:var(--text);
+}
+/* 3. Botón de reserva centrado o adaptado */
+.informacion .btn-reservas {
+    display: block;
+    width: fit-content;
+    margin: 2rem auto 0 auto; /* Centra el botón horizontalmente */
+    padding: 0.8rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    /* (Tus estilos de colores de botones ya existentes se aplicarán aquí) */
+}
+.btn-reservas:hover{
+    color: var(--hover-color);
+    justify-self: center;
 }
 
 /* ============================ */
@@ -646,42 +661,42 @@ tr:hover {
         width: 100%;
         max-width: var(--max-width);
         padding: var(--padding-mobile);
-        margin: 0 auto;
+        margin: 1rem auto;
         /* padding: 1rem 2rem; */
     }
 
     .informacion {
-        background-color: var(--surface);
-        border-radius: 10px;
-        border-top: solid #2ec26b 15px;
+        /* background-color: var(--surface); */
+        /* border-radius: 10px; */
+        /* border-top: solid #2ec26b 15px; */
         box-shadow: var(--shadow);
         padding: var(--padding-mobile);
-        margin-top: 1rem;
+        margin: 1rem auto;
         width: 100%;
         /* text-align: center; */
     }
     .informacion b{
         color: var(--text-dark);
     }
-    .informacion p{
+    /* .informacion p{
         padding: 1.5px;
         justify-self: flex-start !important;
         font-weight: 300;
-    }
+    } */
 
-    .informacion ul {
+    /* .informacion ul {
         padding: 1rem 2rem;
-    }
+    } */
 
-    .informacion a {
+    /* .informacion a {
         text-decoration: none;
         color: var(--text);
-    }
-    .informacion a:hover {
+    } */
+    /* .informacion a:hover {
         text-decoration: none;
         color: var(--hover-color);
         transition: var(--transition-speed);
-    }
+    } */
 
     .login-container {
         background-color: var(--surface);
