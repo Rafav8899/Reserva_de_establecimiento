@@ -635,12 +635,13 @@ tr:hover {
     }
 
     .informacion {
-        /* background-color: var(--surface); */
+        background-color: var(--surface);
         border-radius: 10px;
         border-top: solid #2ec26b 15px;
         box-shadow: var(--shadow);
         padding: var(--padding-mobile);
         margin-top: 1rem;
+        width: 100%;
         /* text-align: center; */
     }
     .informacion b{

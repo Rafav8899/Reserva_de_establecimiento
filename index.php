@@ -1,7 +1,7 @@
 <?php
 
-session_start();
-require __DIR__ . '/config/db_conection.php';
+    session_start();
+    require __DIR__ . '/config/db_conection.php';
 
 ?>
 <!DOCTYPE html>
