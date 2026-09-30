@@ -236,6 +236,12 @@
     transition: all .2s ease;
 }
 
+
+/* =========================================
+    FORMULARIO
+========================================= */
+
+
 .formulario{
     background-color: #3498db;
     padding: 2rem 2rem;
@@ -244,8 +250,9 @@
 }
 
 .formReserva{
-    margin: 30px auto 50px auto; /* espacio arriba y abajo */
-    padding: 2rem 3rem;
+    /* margin: 30px auto 50px auto;  */
+    /* espacio arriba y abajo */
+    /* padding: 2rem 3rem; */
     background: var(--surface);
     /* background-color: red; */
     border-radius: var(--radius);
@@ -257,11 +264,17 @@
     transition: var(--transition);
     color: var(--text);
     text-align: center;
+
+    max-width: 750px;       /* Mantiene el mismo ancho cómodo de lectura que los párrafos */
+    margin: 1rem auto;      /* Centra el bloque de la lista completa en el medio de la pantalla */
+    padding: 1.5rem;   /* Asegura espacio para los números o viñetas */
+    /* text-align: left;       Mantiene los textos de los ítems alineados a la izquierda */
+    display: block;
 }
 .formReserva p{
     color:var(--color-text);
     /* justify-self: center; */
-    /* display: flex; */
+    display: flex;
 }
 
 .formReserva input[type="file"],
@@ -273,7 +286,7 @@
     border: 1px solid #ccc;
     border-radius: 6px;
     font-size: 16px;
-    width: 50%;
+    width: 80%;
     box-sizing: border-box;
     transition: all 0.3s ease;
     background: var(--surface);
