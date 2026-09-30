@@ -135,9 +135,6 @@
     <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus beatae deleniti quidem totam. Eum nisi sunt quibusdam maiores dolorem pariatur aliquid blanditiis, enim, necessitatibus consequatur ipsum error facere architecto temporibus.
     </p> 
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus beatae deleniti quidem totam. Eum nisi sunt quibusdam maiores dolorem pariatur aliquid blanditiis, enim, necessitatibus consequatur ipsum error facere architecto temporibus.
-    </p> 
     -->
 </body>
 </html>
